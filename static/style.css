@@ -1,0 +1,81 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f2f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    background: #fff;
+    width: 380px;
+    border-radius: 18px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h2 {
+    background: #9bbf9d;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message {
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 75%;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.message.user {
+    background: #d8f3dc;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background: #edf2fb;
+    align-self: flex-start;
+}
+
+.input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+}
+
+#send-btn {
+    background: #9bbf9d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+#send-btn:hover {
+    background: #86a88d;
+}
